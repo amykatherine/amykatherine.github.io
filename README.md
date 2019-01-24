@@ -1,2 +1,2 @@
-# My Portfolio
-A showcase of my work from the program.
+# Checkpoint 4: Portfolio: HTML & CSS - Styles
+Completed
