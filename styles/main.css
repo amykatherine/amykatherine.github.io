@@ -1,0 +1,67 @@
+header {
+  background: url('../images/hero-image.jpg') center / cover;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+}
+/*center tells browser to position the image to center and resize so it covers the entire header
+60% of viewport height
+center text vertically
+center text horizontally */
+
+h1 {
+  color: hsla(0, 0%, 100%, 0.9);
+  font-weight: bold;
+}
+
+.slogan {
+  color: hsla(0, 0%, 100%, 0.7);
+  font-weight: lighter;
+  font-size: 1.6rem;
+}
+
+main {
+  max-width: 900px;
+}
+/* We don't want the main content to span the full width of the page – otherwise the page will be difficult to read on large screens. */
+
+.project-description {
+  padding-left: 0;
+}
+/* We don't want any padding to the left of our description text on our featured project; we want left edges of our text to line up because it increases readability. */
+
+.project img {
+  width: 100%;
+}
+/* We want our images to always take up 100% of their container's available width. */
+
+.project img {
+  width: 100%;
+}
+
+footer.mdl-mini-footer {
+  bottom: 0;
+  padding: 0.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+/* The default z-index value is 0. Higher numbers, like 1, will cause the element to appear in front of elements with a lower z-index. Although any positive number greater than 0 would work, 1 is high enough, in this case, to place the footer in front of other elements. */
+
+body {
+  padding-bottom: 5rem;
+}
+
+footer.mdl-mini-footer > ul {
+  margin: auto;
+  font-size: 1.5rem;
+}
+/* We're using > to separate footer.mdl-mini-footer and ul. This is the child combinator, and it only selects immediate children of the selector to its left. */
+
+@media screen and (max-width: 1024px) {
+  header.mdl-layout__header {
+    display: flex;
+  }
+}
+
+/* media query that sets the display of the header to flex on screen widths less than 1024px */
